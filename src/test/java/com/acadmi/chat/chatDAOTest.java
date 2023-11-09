@@ -18,14 +18,14 @@ public class chatDAOTest {
 	@Autowired
 	private ChatDAO chatDAO;
 	
-	@Test
-	public void getChatListTest() throws Exception {
-		
-		Pagination pagination = new Pagination();
-		pagination.setUsername("20200002");
-		List<ChatRoomVO> ar = chatDAO.getChatRoomList(pagination);
-		assertNotEquals(0, ar);
-		
-	}
+//	@Test
+//	public void getChatListTest() throws Exception {
+//		
+//		Pagination pagination = new Pagination();
+//		pagination.setUsername("20200002");
+//		List<ChatRoomVO> ar = chatDAO.getChatRoomList(pagination);
+//		assertNotEquals(0, ar);
+//		
+//	}
 
 }

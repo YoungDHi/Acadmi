@@ -29,7 +29,7 @@
 								<form id="contactForm" action="./login" method="post" >
             						<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
 									<div class="input-group mb-3">
-										<input class="form-control" id="username" name="username"  placeholder="아이디를 입력하세요."/>
+										<input class="form-control" id="username" name="username"  placeholder="아이디를 입력하세요." value="20200001"/>
 										<div class="input-group-append">
 											<div class="input-group-text">
 												<span class="fas fa-user"></span>
@@ -37,7 +37,7 @@
 										</div>
 									</div>
 									<div class="input-group mb-3">
-										<input class="form-control" id="password" name="password" type="password" placeholder="비밀번호를 입력하세요."/>
+										<input class="form-control" id="password" name="password" type="password" placeholder="비밀번호를 입력하세요." value="123"/>
 										<div class="input-group-append">
 											<div class="input-group-text">
 												<span class="fas fa-lock"></span>

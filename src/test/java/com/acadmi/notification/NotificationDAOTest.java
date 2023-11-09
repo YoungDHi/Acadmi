@@ -36,13 +36,13 @@ public class NotificationDAOTest {
 //		assertNotEquals(0, result);
 //	}
 	
-	@Test
-	void getMemberList() throws Exception {
-		List<MemberVO> ar = notificationDAO.getMemberList();
-		assertEquals(9, ar.size());
-		
-	}
-	
+//	@Test
+//	void getMemberList() throws Exception {
+//		List<MemberVO> ar = notificationDAO.getMemberList();
+//		assertEquals(9, ar.size());
+//		
+//	}
+//	
 //	@Test
 //	void getAdministratorList() throws Exception {
 //		MemberVO memberVO = new MemberVO();

@@ -35,9 +35,9 @@ class MemberTest {
 	
 
 //	@Test
-	void test() {
-		String result = passwordEncoder.encode("yang1234");
-		System.out.println("result {}" + result);
-	}
+//	void test() {
+//		String result = passwordEncoder.encode("yang1234");
+//		System.out.println("result {}" + result);
+//	}
 
 }
