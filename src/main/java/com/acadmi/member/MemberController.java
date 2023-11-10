@@ -32,7 +32,7 @@ import com.acadmi.student.StudentVO;
 import lombok.extern.slf4j.Slf4j;
 
 @Controller
-@RequestMapping("/member/*")
+@RequestMapping("ec2-43-200-5-130.ap-northeast-2.compute.amazonaws.com/member/*")
 public class MemberController {
 
 //	Member
