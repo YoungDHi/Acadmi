@@ -1,7 +1,7 @@
 /**
  * chat/detail에서 웹소켓 연결 및 자바스크립트 처리
  */
-let websocket = new WebSocket("ws://ec2-54-180-79-207.ap-northeast-2.compute.amazonaws.com/chat")
+let websocket = new WebSocket("ws://localhost/chat")
 
 let count = 0;
 let max = 1;
