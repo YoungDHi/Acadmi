@@ -49,6 +49,7 @@ public class SecurityConfig {
 	               
 	               .authorizeRequests()
 	                  // URL과 권한 매칭
+	               	  .antMatchers("/ws/**").permitAll()
 	                  .antMatchers("/member/login").permitAll()
 	                  .antMatchers("/member/findPw").permitAll()
 	                  .antMatchers("/member/firstEmail").permitAll()
