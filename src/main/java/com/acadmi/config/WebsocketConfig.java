@@ -9,6 +9,7 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 import org.springframework.web.socket.server.standard.ServletServerContainerFactoryBean;
 
 import com.acadmi.webSocket.ChatWebSocketHandler;
+import com.acadmi.webSocket.WebSocketHandshakeInterceptor;
 
 @Configuration
 @EnableWebSocket
@@ -16,10 +17,15 @@ public class WebsocketConfig implements WebSocketConfigurer {
 	
 	@Autowired
 	private ChatWebSocketHandler chatWebSocketHandler;
+	
+	@Autowired
+	private WebSocketHandshakeInterceptor webSocketHandshakeInterceptor;
 
 	@Override
 	public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-		registry.addHandler(chatWebSocketHandler, "/chat").setAllowedOrigins("*");
+		registry.addHandler(chatWebSocketHandler, "/chat")
+				.setAllowedOrigins("*")
+				.addInterceptors(webSocketHandshakeInterceptor);
 	}
 	
 	@Bean
